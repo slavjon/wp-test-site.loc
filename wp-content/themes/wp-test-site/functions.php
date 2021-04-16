@@ -141,6 +141,7 @@ add_action( 'widgets_init', 'wp_test_site_widgets_init' );
  */
 function wp_test_site_scripts() {
 	wp_enqueue_style( 'wp-test-site-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'main-styles', get_template_directory_uri() . '/html/app/css/main.min.css', array(), '1.1', 'all');
 	wp_style_add_data( 'wp-test-site-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'wp-test-site-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

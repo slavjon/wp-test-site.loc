@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+		<div class="site-info container">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wp-test-site' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
