@@ -179,3 +179,78 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Return minimal price when variable product
+ */
+add_filter('woocommerce_variable_price_html', 'my_woocommerce_variable_price_html', 10, 2); 
+ 
+function my_woocommerce_variable_price_html( $price, $product ) {
+     return wc_price($product->get_price()); 
+}
+
+
+function mytheme_customize_register( $wp_customize ) {
+/*
+Добавляем секцию в настройки темы
+*/
+$wp_customize->add_section(
+    // ID
+    'data_site_section',
+    // Arguments array
+    array(
+        'title' => 'Телефон и почта в шапке сайта',
+        'capability' => 'edit_theme_options',
+        'priority' => "1"
+    )
+);
+
+/*
+Добавляем поле телефона site_telephone
+*/
+$wp_customize->add_setting(
+    // ID
+    'site_phone',
+    // Arguments array
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+    // ID
+    'site_phone_control',
+    // Arguments array
+    array(
+        'type' => 'text',
+        'label' => "Телефон",
+        'section' => 'data_site_section',
+        // This last one must match setting ID from above
+        'settings' => 'site_phone'
+    )
+);
+/*
+Добавляем поле почты данных
+*/
+$wp_customize->add_setting(
+    // ID
+    'theme_email',
+    // Arguments array
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+    // ID
+    'theme_email_control',
+    // Arguments array
+    array(
+        'type' => 'text',
+        'label' => "Email",
+        'section' => 'data_site_section',
+        // This last one must match setting ID from above
+        'settings' => 'theme_email'
+    )
+);
+}
+add_action( 'customize_register', 'mytheme_customize_register' );

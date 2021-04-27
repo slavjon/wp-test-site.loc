@@ -1,0 +1,16 @@
+2021-04-27T16:51:52+00:00 CRITICAL Uncaught Error: Call to undefined function typeOf() in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php:31
+Stack trace:
+#0 C:\OpenServer\domains\wp-test-site.loc\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\wp-test-site.loc\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\wp-test-site.loc\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php on line 31
+
+2021-04-27T16:53:48+00:00 CRITICAL syntax error, unexpected '<' in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php on line 31
+
+2021-04-27T18:44:49+00:00 CRITICAL syntax error, unexpected '<' in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php on line 34
+
+2021-04-27T18:45:45+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php on line 39
+
+2021-04-27T19:11:08+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\functions.php on line 191
+

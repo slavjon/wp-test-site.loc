@@ -1,5 +1,5 @@
 let preprocessor = 'scss', // Preprocessor (sass, less, styl); 'sass' also work with the Scss syntax in blocks/ folder.
-    fileswatch = 'html,htm,txt,json,md,woff2' // List of files extensions for watching & hard reload
+    fileswatch = 'php,html,htm,txt,json,md,woff2' // List of files extensions for watching & hard reload
 
 const { src, dest, parallel, series, watch } = require('gulp')
 const browserSync = require('browser-sync').create()
@@ -124,7 +124,7 @@ function startwatch() {
     watch(`wp-content/themes/wp-test-site/html/app/styles/${preprocessor}/**/*`, { usePolling: true }, styles)
     watch(['wp-content/themes/wp-test-site/html/app/js/**/*.js', '!app/js/**/*.min.js'], { usePolling: true }, scripts)
     watch('wp-content/themes/wp-test-site/html/app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
-    watch(`wp-content/themes/wp-test-site/html/app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
+    watch(`wp-content/themes/wp-test-site/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
 }
 
 exports.scripts = scripts

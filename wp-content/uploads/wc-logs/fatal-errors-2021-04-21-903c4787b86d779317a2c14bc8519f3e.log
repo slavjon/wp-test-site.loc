@@ -1,0 +1,8 @@
+2021-04-21T20:12:16+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\plugin.php on line 190
+
+2021-04-21T20:12:16+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\TimeInterval.php on line 322
+
+2021-04-21T20:12:54+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\TimeInterval.php on line 305
+
+2021-04-21T20:12:55+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\option.php on line 270
+
