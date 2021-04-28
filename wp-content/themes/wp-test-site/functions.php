@@ -145,6 +145,7 @@ function wp_test_site_scripts() {
 	wp_style_add_data( 'wp-test-site-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'wp-test-site-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/js/slick/slick.min.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -205,7 +206,7 @@ $wp_customize->add_section(
 );
 
 /*
-Добавляем поле телефона site_telephone
+Добавляем поле телефона site_phone
 */
 $wp_customize->add_setting(
     // ID

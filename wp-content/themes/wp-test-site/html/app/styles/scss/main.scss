@@ -1,5 +1,7 @@
 @import 'config';
 @import 'woocommerce/woocommerce.scss';
+@import './slick/slick-theme.scss';
+@import './slick/slick.scss';
 html {
     scroll-behavior: smooth;
 }
@@ -15,5 +17,51 @@ body {
         border-right: 1px solid #eee;
         padding: 5px 20px;
         justify-content: center;
+    }
+}
+
+.home__slider-wrap {
+    position: relative;
+    padding: 25px 0;
+    .home__slide {
+        text-align: center;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+        .wp-post-image {
+            margin: 0 auto;
+            max-width: 173px;
+        }
+    }
+    .star-rating {
+        margin: 0 auto;
+        float: none;
+        overflow: hidden;
+        position: relative;
+        height: 1em;
+        line-height: 1;
+        font-size: 1em;
+        width: 5.4em;
+        font-family: star;
+    }
+    .star-rating::before {
+        content: "\73\73\73\73\73";
+        color: #d3ced2;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .star-rating span {
+        overflow: hidden;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 1.5em;
+    }
+    .star-rating span::before {
+        content: "\53\53\53\53\53";
+        top: 0;
+        position: absolute;
+        left: 0;
     }
 }

@@ -1,0 +1,42 @@
+2021-04-28T18:36:15+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php:14
+Stack trace:
+#0 C:\OpenServer\domains\wp-test-site.loc\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\wp-test-site.loc\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\wp-test-site.loc\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php on line 14
+
+2021-04-28T18:36:21+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php:14
+Stack trace:
+#0 C:\OpenServer\domains\wp-test-site.loc\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\wp-test-site.loc\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\wp-test-site.loc\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown in C:\OpenServer\domains\wp-test-site.loc\wp-content\themes\wp-test-site\home.php on line 14
+
+2021-04-28T20:14:53+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\option.php on line 270
+
+2021-04-28T20:14:53+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\TimeInterval.php on line 319
+
+2021-04-28T20:15:19+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\class-wp-object-cache.php on line 286
+
+2021-04-28T20:15:39+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-content\plugins\woocommerce\includes\wc-formatting-functions.php on line 753
+
+2021-04-28T20:19:14+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\class-wp-hook.php on line 294
+
+2021-04-28T20:19:16+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\option.php on line 82
+
+2021-04-28T20:23:55+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\class-wp-object-cache.php on line 290
+
+2021-04-28T20:23:55+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\class-wp-object-cache.php on line 494
+
+2021-04-28T20:24:06+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\plugin.php on line 202
+
+2021-04-28T20:24:54+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\TimeInterval.php on line 319
+
+2021-04-28T20:24:54+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-includes\class-wp-object-cache.php on line 494
+
+2021-04-28T20:33:08+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\TimeInterval.php on line 305
+
+2021-04-28T20:33:11+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in C:\OpenServer\domains\wp-test-site.loc\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\TimeInterval.php on line 319
+
